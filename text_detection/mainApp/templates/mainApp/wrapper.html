@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>main html</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>{% include "mainApp/includes/some_gtml.html" %}</h1>
+        {% block content %}
+        {% endblock %}
+        <p>
+          <a href="/" class="btn btn-success btn-lg">Home page</a>
+          <a href="/" class="btn btn-primary btn-lg">News</a>
+          <a href="/contacts" class="btn btn-info btn-lg">contacts</a>
+        </p>
+    </div>
+  </div>
+  <div class='container'>
+    <hr>
+    &copy; Все права звщищены 2019
+  </div>
+  </body>
+</html>
