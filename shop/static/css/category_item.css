@@ -1,0 +1,30 @@
+.item-card {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 335px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    padding: 21px 14px 0;
+    margin-bottom: -1px;
+}
+
+.item-card__sticker {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.item-card__image-wrapper {
+    display: block;
+    margin-bottom: 21px;
+}
+
+.item-card__image {
+    display: block;
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+}
