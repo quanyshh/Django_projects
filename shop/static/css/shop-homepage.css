@@ -4,5 +4,67 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
  */
 body {
-  padding-top: 56px;
+  padding-top: 65px;
+}
+
+.nav {
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+    position: relative;
+}
+
+.nav__inner {
+    *zoom: 1;
+    width: 960px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    margin-bottom: 0;
+}
+
+.g-hidden {
+    overflow: hidden;
+}
+
+.nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 1200px;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0 0 14px;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.nav__el:first-child {
+    border-left: 1px solid #e5e5e5;
+}
+
+.nav__el {
+    flex: none;
+    text-align: center;
+    height: 63px;
+    position: relative;
+    display: table-cell;
+    border-right: 1px solid #e5e5e5;
+}
+
+.nav__el-link-text {
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: middle;
+    margin-top: -3px;
+    font-size: 14px;
+    line-height: 1.2;
 }
