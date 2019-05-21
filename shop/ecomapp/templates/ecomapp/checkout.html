@@ -1,0 +1,27 @@
+{% extends 'ecomapp/index.html' %}
+
+{% block content %}
+  <table class="table">
+    <tr>
+      <td class="text-center">Товар</td>
+      <td class="text-center">Количество</td>
+      <td class="text-center">Цена</td>
+      <td></td>
+    </tr>
+    {% for item in cart.items.all %}
+    <tr class="cart-item-{{ item.product.id }}">
+      <td class="text-center">{{ item.product.title }}</td>
+      <td class="text-center">{{ item.qty }}<td>
+      <td class="text-center">{{ item.item_total }} тг</td>
+      <td></td>
+    </tr>
+    {% endfor %}
+    <tr>
+      <td></td>
+      <td class="text-center">Итого</td>
+      <td class="text-center" id="cart-total-price"><strong>{{ cart.cart_total }} тг</strong></td>
+      <td></td>
+    </tr>
+  </table>
+<a href="#" class="d-flex justify-content-end"><button type="button" class="btn btn-success" name="button">Оформить заказ</button></a>
+{% endblock content %}

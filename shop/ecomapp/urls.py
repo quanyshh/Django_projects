@@ -20,4 +20,9 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('products/<product_slug>/', views.product_view, name='product_detail'),
     path('category/<category_slug>/', views.category_view, name='category_detail'),
+    path('cart/', views.cart_view, name='cart'),
+    path('add_to_cart/', views.add_to_cart_view, name='add_to_cart'),
+    path('remove_from_cart/', views.remove_from_cart_view, name='remove_from_cart'),
+    path('change_item_qty/', views.change_item_qty, name='change_item_qty'),
+    path('checkout/', views.checkout_view, name='checkout')
 ]

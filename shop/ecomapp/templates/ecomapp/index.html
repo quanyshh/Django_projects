@@ -30,16 +30,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="{% url 'cart' %}">Корзина <span class="badge" style="color:grey;" id="cart_count">{{ cart.items.count }}</span></a>
           </li>
         </ul>
       </div>
@@ -84,14 +77,14 @@
               {% endif %}
             {% endfor %}
           </div>
-          <a class="carousel-control-prev" href="" role="button" data-slide="prev" style="background:transparent;">
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="" role="button" data-slide="next" style="background:transparent;">
-            <span class="carousel-control-next-icon" aria-hidden="true" style="color: black"></span>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-          </a>
+          </a> ь д
         </div>
       </div>
       <div class="col-lg-12">
@@ -138,8 +131,11 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
+
+
   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
 
 </body>
 
